@@ -1,0 +1,123 @@
+/* variables */
+.col-lg-6 h1 {
+  color: grey; }
+
+.texto__encabezado {
+  color: white;
+  font-size: 20px;
+  text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .texto__encabezado {
+      color: grey; } }
+
+.black {
+  color: black; }
+
+.white {
+  color: white; }
+
+.grey {
+  color: grey; }
+
+.form {
+  width: 100%;
+  margin: auto; }
+
+.col-lg-6 p {
+  font-size: 20 px;
+  font-family: "tahoma";
+  font-weight: bold; }
+
+.modificar {
+  color: #6b7177;
+  text-decoration: none;
+  background-color: transparent; }
+
+body {
+  background-color: #f4f5f2; }
+  @media only screen and (min-width: 1024px) {
+    body h1 {
+      font-size: 50px; }
+    body h2 {
+      font-size: 4em;
+      color: grey;
+      text-align: center; }
+    body p {
+      color: grey; } }
+
+body {
+  background-color: #f4f5f2; }
+  @media only screen and (max-width: 768px) {
+    body h1 {
+      font-size: 30px; }
+    body h2 {
+      font-size: 12px;
+      color: grey;
+      text-align: center; }
+    body p {
+      font-size: 15px;
+      color: grey; }
+    body .achicar {
+      justify-content: center;
+      width: 200px;
+      height: 150px;
+      left: 0;
+      top: 0;
+      overflow: hidden; } }
+
+/*map-get*/
+div {
+  background-color: #f4f5f2;
+  text-align: center;
+  padding: 1rem;
+  font-size: 35px;
+  color: grey; }
+
+.paddingTB {
+  padding: 50px 0; }
+
+.paddingLR {
+  padding: 0 20PX; }
+
+div {
+  background-color: #f4f5f2;
+  text-align: center;
+  padding: 1rem;
+  font-size: 20px;
+  color: grey; }
+
+.grupo {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1.35fr; }
+
+.input {
+  text-align: left; }
+
+.input input {
+  border: 0.1px solid #0009; }
+
+.label {
+  text-align: right; }
+
+textarea {
+  resize: none;
+  width: 240px;
+  height: 130px; }
+
+@media only screen and (max-width: 425px) {
+  .grupo {
+    grid-template-columns: 1fr; }
+  .label {
+    text-align: center; }
+  .input {
+    text-align: center; } }
+
+.redess {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  list-style: none; }
+
+.espacio {
+  padding: 20px; }

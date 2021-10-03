@@ -1,0 +1,32 @@
+/* variables */
+$gris:grey;
+$negro:rgb(0,0,0);
+$pDesktop:20 px;
+$fontFamily: "tahoma";
+
+
+.col-lg-6{
+	h1{color: $gris;}
+}
+
+.texto{
+	&__encabezado{color: white;
+		font-size: 20px;
+		text-align: center;
+		@media only screen and(max-width: 768px){
+			color:$gris;
+		}
+                 }
+
+}
+
+@each $color in black, white, grey {
+	.#{$color}{
+		color:#{$color};
+	}
+}
+
+.form{
+	width: 100%;
+	margin: auto;
+}

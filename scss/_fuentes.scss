@@ -1,0 +1,143 @@
+$pDesktop:20 px;
+$fontFamily: "tahoma";
+
+.col-lg-6{
+	p{
+		font:{
+			size:$pDesktop;
+			family:$fontFamily;
+			weight:bold;
+		}
+	}
+
+}
+.modificar{
+    color: #6b7177;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+$vista:desktop;
+body{
+	background-color:#f4f5f2;
+	@if $vista == desktop{
+    @media only screen and (min-width: 1024px){
+
+	h1{
+	 font-size: 50px;
+	}
+	h2{ 
+		font-size: 4em;
+		color: grey;
+		text-align:center;
+	}
+	p{
+		color: grey;
+	}
+	}
+    }
+	}
+
+$vista:mobile;
+body{
+	background-color:#f4f5f2;
+	@if $vista == mobile {
+	@media only screen and (max-width:768px){
+		h1{
+			font-size: 30px;
+		}
+		h2{font-size: 12px;
+			color: grey;
+		text-align:center;
+		}
+		p{
+			font-size: 15px;
+			color: grey;
+		}
+		.achicar{
+			justify-content: center;
+			width: 200px;
+			height: 150px;
+		    left: 0;
+		    top: 0;
+		    overflow: hidden;
+}
+        
+
+}
+}
+}
+
+
+/*map-get*/
+
+$estilos: (
+	color: #f4f5f2,
+	centro:center,
+	upper: uppercase,
+	tFuente:35px,
+	1rem:1rem,
+);
+
+div {
+	background-color: map-get($estilos,color);
+    text-align: map-get($estilos,centro);
+    padding: map-get($estilos,1rem);
+    font-size: map-get($estilos,tFuente);
+    color: grey;
+}
+
+$padding: (
+	TB:50px 0,
+	LR:0 20PX,
+	);
+
+@each $ubicacion, $espacio in $padding
+ { .padding#{$ubicacion}{
+ 	 padding: $espacio;
+ }
+	
+}
+div {
+    background-color: #f4f5f2;
+    text-align: center;
+    padding: 1rem;
+    font-size: 20px;
+    color: grey;
+}
+
+.grupo {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.35fr;
+}
+
+.input {
+    text-align: left;
+}
+
+.input input {
+    border: 0.1px solid #0009;
+}
+
+.label {
+    text-align: right;
+}
+
+textarea {
+    resize: none;
+    width: 240px;
+    height: 130px;
+}
+
+@media only screen and (max-width: 425px) {
+    .grupo {
+        grid-template-columns: 1fr;
+    }
+    .label {
+        text-align: center;
+    }
+    .input {
+        text-align: center;
+    }
+}
